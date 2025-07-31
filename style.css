@@ -1,0 +1,70 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('back\ pink.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+
+header {
+  background-color: pink;
+  color: black;
+  text-align: center;
+  padding: 1rem 5rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.infografis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: pink;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: black;
+}
+
+footer {
+  background: pink;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+
+
+
