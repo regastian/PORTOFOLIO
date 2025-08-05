@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me :)</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Regastian</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img src="Photo Profile.jpeg" alt="foto" class="foto">
- <header>
-    <h1> Halo,Saya Adzamar Mahdum Regastian 👋</h1>
-    <h2>XI RPL B | Portofolio</h2>
-    <p><strong>"Saya adalah siswa kelas 11 dan anak terakhir dari lima bersaudara. Secara kepribadian,saya cenderung introvert dan agak pemalu, lebih nyaman menyendiri daripada berada di keramaian. Saya jarang main keluar atau nongkrong, dan lebih sering menghabiskan waktu di kamar sambil nonton film favorit sendirian atau bermain game. Dari kecil saya sudah terbiasa menikmati waktu sendiri, tapi bukan berarti saya nggak bisa bergaul
-       saya cuma lebih memilih tenang. Salah satu hal yang aku suka sejak SMP adalah bermain basket, dan sampai sekarang itu masih jadi bagian dari cara saya melepaskan penat dan tetap aktif. Walaupun saya bukan tipe orang yang banyak bicara, saya percaya bahwa jadi diri sendiri adalah hal paling penting."</strong>  
-      </p>
-  </header>
 
-  <main class="infografis">
-    <section class="card">
-      <h2>😋 My Biodata</h2>
+  <div id="main-page">
+    <nav>
       <ul>
-        <li><strong>Nama:</strong><strong> Adzamar Mahdum Regastian</strong></li>
-        <li><strong>Nama Pangilan:</strong><strong> Regastian</strong></li>
-        <li><strong>Umur:</strong> <strong> 16 tahun</strong></li>
-        <li><strong>Sekolah:</strong><strong> SMK Negeri 8 Malang</strong></li>
-        <li><strong>Domisili:</strong><strong> Malang, Jawa Timur</strong></li>
-        <li><strong>Hobi:</strong><strong> Basket,Playing Game and turu</strong></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#contact">Kontak</a></li>
       </ul>
+    </nav>
+
+    <header>
+      <h1>Halo, Saya Regastian</h1>
+      <p>Pelajar | Web Developer Pemula</p>
+      <img
+        src="Wife.jpeg"
+        alt="Foto Regastian"
+        class="Wife"
+        onclick="showBiodata()"
+      />
+      <p>(Klik foto untuk lihat biodata lengkap)</p>
+    </header>
+
+    <section id="projects" class="projects">
+      <h2>Projek Saya</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Website Toko Buku</h3>
+          <p>Program Java berbasis OOP untuk transaksi pembelian buku.</p>
+        </div>
+        <div class="project">
+          <h3>Infografis Pasal 28B</h3>
+          <p>Desain infografis hak asasi manusia menggunakan Canva.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>✨My Favorite Lagu </h2>
-      <ul>
-        <li><strong>🔹 Dept-Strawberry Champage</strong></li>
-        <li><strong>🔹 Timeless-Playboi Carti</strong></li>
-        <li><strong>🔹 5% TINT-Travis Scoot</strong></li>
-        <li><strong>🔹 Die For You-The Weekend</strong></li>
-        <li><strong>🔹 close with desire(right person wrong timing)-teo glacier</strong></li>
-      </ul>
+    <section id="contact" class="contact">
+      <h2>Kontak Saya</h2>
+      <p>Email: regastian@email.com</p>
+      <p>Instagram: @regastian</p>
     </section>
-  </main>
 
-  <footer>
-    <h2>Contact Me</h2>
-      <li><strong>Instagram:</strong><a href="https://www.instagram.com/azzamartt?igsh=Y3gxejc5MThyM3M5" target="_blank">@azzamartt</a></li>
-    <li><strong>Email:</strong> <a href="mailto:fyznkenzo@gmail.com">fyznkenzo@gmail.com</a></li>
-     <li><strong>WhatsApp:</strong><a href="https://wa.me/6285746843486" target="_blank">+62 857-4684-3486</a></li>
-    <p>Made with ❤️ by Regastian | 2025</p>
-  </footer>
+    <footer>
+      <p>&copy; copyright </p>
+    </footer>
+  </div>
+
+  <div id="biodata-page" class="hidden">
+    <section class="biodata">
+      <h2>Biodata Lengkap</h2>
+        <img src="Photo Profile.jpeg" alt="Foto Regastian" class="Photo-Profile" />
+      <table>
+        <tr><td>Nama</td><td>: Regastian</td></tr>
+        <tr><td>Alamat</td><td>: Malang, Jawa Timur</td></tr>
+        <tr><td>Umur</td><td>: 17 tahun</td></tr>
+        <tr><td>Tanggal Lahir</td><td>: 12 Agustus 2008</td></tr>
+        <tr><td>Hobi</td><td>: Ngoding, Desain, Ngopi di Ceritasena ☕</td></tr>
+      </table>
+      <button onclick="showMainPage()">Kembali</button>
+    </section>
+  </div>
+
+  <script>
+    function showBiodata() {
+      document.getElementById("main-page").style.display = "none";
+      document.getElementById("biodata-page").style.display = "block";
+    }
+
+    function showMainPage() {
+      document.getElementById("main-page").style.display = "block";
+      document.getElementById("biodata-page").style.display = "none";
+    }
+  </script>
 </body>
 </html>
