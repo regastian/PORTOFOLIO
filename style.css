@@ -1,17 +1,20 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
-  color: #333;
+  background: url('pink\ star.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: black;
 }
 
 .container {
   max-width: 800px;
   margin: 40px auto;
-  background: pink;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   padding: 40px;
+  border-radius: 20px;
+  background: url('back\ pink.jpg') no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: black; 
 }
 
 .profile {
@@ -51,6 +54,13 @@ ul {
   max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.Efootball:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .Basket {
@@ -59,6 +69,22 @@ ul {
   max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
+.Basket:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 14px;
+  color: black;
+  background-color: pink;
+  border-top: 1px solid pink;
+}
 
