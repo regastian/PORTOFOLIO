@@ -2,82 +2,60 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portofolio Regastian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Saya</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="profile">
+      <img src="Photo Profile.jpeg" alt="Foto Profil" class="Photo-Profile" />
+      <h1>Adzamar Mahdum Regastian</h1>
+      <p>XI RPL B | 02 | PORTOVOLIO</p>
+    </div>
 
-  <div id="main-page">
-    <nav>
+    <section>
+      <h2>Tentang Saya</h2>
+      <strong><p>AKU ADALAH SISWA KELAS 11 DAN ANAK TERAKHIR DARI LIMA BERSAUDARA. AKU INTROVERT, AGAK PEMALU, LEBIH SUKA NONTON FILM FAVORITE DIKAMAR, DAN JARANG NONGKRONG. SEJAK SMP AKU JUGA SUKA BASKET. WALAUPUN AGAK MEREPOTKAN DAN BIASA AJA, AKU TETAP INGIN BERKEMBANG UNTUK MENJADI VERSI TERBAIK DARI DIRI KU SENDIRI.
+     </strong>  
+      </section>
+
+    <section>
+      <h2>Apapun</h2>
       <ul>
-        <li><a href="#projects">Projek</a></li>
-        <li><a href="#contact">Kontak</a></li>
+       <strong><li>BASKET DAN OLAHRAGA LAINNYA</li></strong> 
+       <strong><li>MAIN GAME,MEMBACA MANGA,NOVEL DAN SELEBIHNYA</li></strong>
+        <strong><li>TIDUR</li></strong>
+        <strong><li>TIDAK SUKA NONGKI DAN SEJENISNYA(KECUALI DENGAN SAUDARA ATAU KELUARGA).</li></strong>
       </ul>
-    </nav>
+    </section>
 
-    <header>
-      <h1>Halo, Saya Regastian</h1>
-      <p>Pelajar | Web Developer Pemula</p>
-      <img
-        src="Wife.jpeg"
-        alt="Foto Regastian"
-        class="Wife"
-        onclick="showBiodata()"
-      />
-      <p>(Klik foto untuk lihat biodata lengkap)</p>
-    </header>
+    <section>
+      <h2>Pencapaian</h2>
+      <ul>
+        <li>
+          <strong>DIVISI 2 EFOOTBALL</strong>  <br />
+         <img src="Efootball.jpeg" alt="Efootball" class="Efootball" />
+        </li>
+        <li>
+          <strong>IKUT EVENT BASKETBALL SAAT MASIH SMP</strong>  <br />
+          <img src="Basket.jpeg" alt="Basket" class="Basket" />
+        </li>
 
-    <section id="projects" class="projects">
-      <h2>Projek Saya</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>Website Toko Buku</h3>
-          <p>Program Java berbasis OOP untuk transaksi pembelian buku.</p>
-        </div>
-        <div class="project">
-          <h3>Infografis Pasal 28B</h3>
-          <p>Desain infografis hak asasi manusia menggunakan Canva.</p>
-        </div>
+  </ul>
+    </section>
+
+    <section>
+      <h2>My Contact</h2>
+      <div class="kontak">
+        <ul>
+        <li><strong>Email:</strong><a href="mailto:fyznkenzo@gmail.com" target="_blank">fyznkenzo@gmail.com</a></li>
+        <li><strong>WhatsApp:</strong><a href="https://wa.me/6285746843486" target="_blank">+62 857-4684-3486</a></li>
+        <li><strong>Instagram:</strong><a href="https://instagram.com/azzamartt" target="_blank">@azzamartt</a></li>
+      </ul>
       </div>
     </section>
-
-    <section id="contact" class="contact">
-      <h2>Kontak Saya</h2>
-      <p>Email: regastian@email.com</p>
-      <p>Instagram: @regastian</p>
-    </section>
-
-    <footer>
-      <p>&copy; copyright </p>
-    </footer>
   </div>
-
-  <div id="biodata-page" class="hidden">
-    <section class="biodata">
-      <h2>Biodata Lengkap</h2>
-        <img src="Photo Profile.jpeg" alt="Foto Regastian" class="Photo-Profile" />
-      <table>
-        <tr><td>Nama</td><td>: Regastian</td></tr>
-        <tr><td>Alamat</td><td>: Malang, Jawa Timur</td></tr>
-        <tr><td>Umur</td><td>: 17 tahun</td></tr>
-        <tr><td>Tanggal Lahir</td><td>: 12 Agustus 2008</td></tr>
-        <tr><td>Hobi</td><td>: Ngoding, Desain, Ngopi di Ceritasena ☕</td></tr>
-      </table>
-      <button onclick="showMainPage()">Kembali</button>
-    </section>
-  </div>
-
-  <script>
-    function showBiodata() {
-      document.getElementById("main-page").style.display = "none";
-      document.getElementById("biodata-page").style.display = "block";
-    }
-
-    function showMainPage() {
-      document.getElementById("main-page").style.display = "block";
-      document.getElementById("biodata-page").style.display = "none";
-    }
-  </script>
 </body>
 </html>
+
